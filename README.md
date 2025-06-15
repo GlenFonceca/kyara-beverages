@@ -3,7 +3,7 @@
 > **Refreshment, Reimagined** - A premium beverage company website showcasing innovative millet-based drinks.
 
 ## 🔗 Live Demo
-View Live Website → 
+View Live Website → [Kyara-Beverages](https://kyara-beverages.netlify.app/)
 
 ## 🌟 Overview
 
