@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyara Beverages</title>
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+  </head>
+  <body class="bg-gradient-to-br from-pink-50 to-pink-100">
+    <!-- Navigation -->
+     <nav class="fixed w-full top-0 z-50 navbar-blur border-b border-pink-200 shadow-md bg-white/30 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-bold text-pink-900">Kyara Beverages</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#hero" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Home</a>
+        <a href="#about" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">About</a>
+        <a href="#products" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Products</a>
+        <a href="#contact" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-pink-800 hover:text-pink-600 transition-colors duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white/40 backdrop-blur-md border-t border-pink-200">
+    <a href="#hero" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Home</a>
+    <a href="#about" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">About</a>
+    <a href="#products" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Products</a>
+    <a href="#contact" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Contact</a>
+  </div>
+</nav>
+    <!-- <nav class="fixed w-full top-0 z-50 navbar-blur border-b border-pink-200 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-3">
+            <span class="text-2xl font-bold text-pink-900"
+              >Kyara Beverages</span
+            >
+          </div>
+
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#hero"
+              class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium"
+              >About</a
+            >
+            <a
+              href="#products"
+              class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium"
+              >Products</a
+            >
+            <a
+              href="#contact"
+              class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium"
+              >Contact</a
+            >
+          </div>
+
+          <div class="md:hidden">
+            <button
+              class="text-pink-800 hover:text-pink-600 transition-colors duration-300"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="min-h-screen gradient-bg flex items-center justify-center pt-16 relative overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="text-center lg:text-left slide-in-left">
+            <h1
+              class="text-5xl md:text-7xl font-bold text-pink-900 mb-6 leading-tight"
+            >
+              Refreshment,
+              <span class="text-gradient block p-2 typing-text"
+                >Reimagined</span
+              >
+            </h1>
+            <p
+              class="text-xl md:text-2xl text-pink-700 mb-8 leading-relaxed fade-in-up"
+              style="animation-delay: 0.5s"
+            >
+              Experience the perfect blend of innovation and tradition with
+              Kyara's premium beverage collection.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in-up"
+              style="animation-delay: 0.8s"
+            >
+              <button
+                class="px-8 py-4 bg-pink-600 text-white rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 pulse-glow"
+              >
+                Discover Our Drinks
+              </button>
+              <button
+                class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-full font-semibold text-lg hover:bg-pink-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div class="hidden  justify-center slide-in-right relative lg:flex">
+            <div class="relative">
+        
+              <div
+                class="w-80 h-80 bg-gradient-to-br from-pink-300 to-pink-500 float-animation opacity-20 absolute -top-10 -left-10 morphing-blob"
+              ></div>
+              <div
+                class="w-60 h-60 bg-gradient-to-br from-pink-400 to-pink-600 float-delay opacity-30 absolute -bottom-5 -right-5 morphing-blob"
+                style="animation-delay: -4s"
+              ></div>
+              <div
+                class="w-40 h-40 bg-gradient-to-br from-pink-200 to-pink-400 float-slow opacity-25 absolute top-5 right-10 morphing-blob"
+              ></div>
+
+              <div
+                class="relative z-10 w-72 h-72 bg-white rounded-3xl shadow-2xl flex items-center justify-center bottle-3d"
+              >
+                <img
+                  src="assets/images/logo.png"
+                  class="w-full h-full transition-transform duration-500 hover:scale-110"
+                  alt="Kyara Logo"
+                />
+              </div>
+
+              <!-- Additional floating elements -->
+              <div
+                class="absolute -top-5 -right-5 w-16 h-16 bg-pink-300 rounded-full opacity-40 float-animation"
+                style="animation-delay: -1s"
+              ></div>
+              <div
+                class="absolute -bottom-8 -left-8 w-12 h-12 bg-pink-400 rounded-full opacity-50 float-delay"
+                style="animation-delay: -2s"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center fade-in-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-pink-900 mb-8">
+            About Kyara
+          </h2>
+          <div class="max-w-4xl mx-auto">
+            <p
+              class="text-xl text-pink-700 leading-relaxed mb-6 fade-in-up"
+              style="transition-delay: 0.2s"
+            >
+              At Kyara Beverages, we believe that every sip should be an
+              experience that refreshes both body and soul. Our mission is to
+              craft premium beverages that blend traditional flavors with modern
+              innovation, creating drinks that not only quench your thirst but
+              elevate your everyday moments.
+            </p>
+            <p
+              class="text-lg text-pink-600 leading-relaxed fade-in-up"
+              style="transition-delay: 0.4s"
+            >
+              From our carefully sourced ingredients to our sustainable
+              packaging, every aspect of our process reflects our commitment to
+              quality, health, and environmental responsibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 gradient-bg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-pink-900 mb-8">
+            Our Beverages Collection
+          </h2>
+          <p class="text-xl text-pink-700 max-w-2xl mx-auto">
+            Discover our handcrafted beverages, each designed to deliver a
+            unique and refreshing experience.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="card-3d bg-white rounded-3xl p-8 text-center shadow-xl">
+            <div
+              class="w-32 h-40 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+            >
+              <div>
+                <img
+                  class="transition-transform duration-300 hover:scale-110"
+                  src="assets/images/drinks/drink1.png"
+                  alt="Nutri Brown Delight"
+                />
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-pink-900 mb-4">
+              Nutri Brown Delight
+            </h3>
+            <p class="text-pink-700 mb-6">
+              A smooth, nourishing blend made from little millet, perfect for a
+              light and refreshing boost.
+            </p>
+          </div>
+
+          <div class="card-3d bg-white rounded-3xl p-8 text-center shadow-xl">
+            <div
+              class="w-32 h-40 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+            >
+              <div class="">
+                <img
+                  class="transition-transform duration-300 hover:scale-110"
+                  src="assets/images/drinks/drink3.png"
+                  alt="Ragi Velvet"
+                />
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-pink-900 mb-4">Ragi Velvet</h3>
+            <p class="text-pink-700 mb-6">
+              A creamy, revitalizing drink made with finger millet, known for
+              its calcium-rich goodness.
+            </p>
+          </div>
+
+          <div class="card-3d bg-white rounded-3xl p-8 text-center shadow-xl">
+            <div
+              class="w-32 h-40 mx-auto mb-6 rounded-2xl flex items-center justify-center"
+            >
+              <div class="">
+                <img
+                  class="transition-transform duration-300 hover:scale-110"
+                  src="assets/images/drinks/drink2.png"
+                  alt="Millet Mellow"
+                />
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold text-pink-900 mb-4">Millet Mellow</h3>
+            <p class="text-pink-700 mb-6">
+              A wholesome beverage crafted from foxtail millet, rich in fiber
+              and earthy flavor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 fade-in-up">
+          <h2 class="text-4xl md:text-5xl font-bold text-pink-900 mb-8">
+            Get In Touch
+          </h2>
+          <p class="text-xl text-pink-700 max-w-2xl mx-auto">
+            Have questions about our products or want to learn more about Kyara
+            Beverages? We'd love to hear from you.
+          </p>
+        </div>
+
+        <div
+          class="max-w-2xl mx-auto fade-in-up"
+          style="transition-delay: 0.3s"
+        >
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-pink-800 font-semibold mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  class="w-full px-4 py-3 border-2 border-pink-200 rounded-xl focus:border-pink-500 focus:outline-none transition-colors duration-300"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label class="block text-pink-800 font-semibold mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="w-full px-4 py-3 border-2 border-pink-200 rounded-xl focus:border-pink-500 focus:outline-none transition-colors duration-300"
+                  placeholder="your@email.com"
+                />
+              </div>
+            </div>
+            <div>
+              <label class="block text-pink-800 font-semibold mb-2"
+                >Message</label
+              >
+              <textarea
+                rows="6"
+                class="w-full px-4 py-3 border-2 border-pink-200 rounded-xl focus:border-pink-500 focus:outline-none transition-colors duration-300"
+                placeholder="Tell us how we can help you..."
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+                type="submit"
+                class="px-8 py-4 bg-pink-600 text-white rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 pulse-glow"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 mb-12">
+          <div class="col-span-2 md:col-span-1">
+            <div class="flex items-center space-x-3 mb-6">
+              <div
+                class="w-12 h-12 bg-white rounded-full flex items-center justify-center"
+              >
+                <img src="assets/images/logo.png" alt="Kyara Logo" />
+              </div>
+              <span class="text-2xl font-bold text-pink-900"
+                >Kyara Beverages</span
+              >
+            </div>
+            <p class="text-pink-600 text-sm">
+              Crafting beverages that elevate your everyday moments.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-pink-900 mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#hero"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#products"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-pink-900 mb-4">Products</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Nutri Brown Delight</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Ragi Velvet</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
+                  >Millet Mellow</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-pink-900 mb-4">Contact Info</h4>
+            <div class="space-y-2 text-pink-700">
+              <p class="flex items-center space-x-2">
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+                <span class="text-sm">careers@kyarabeverages.in</span>
+              </p>
+              <div class="flex space-x-4 mt-4">
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transform hover:scale-110 transition-all duration-300"
+                >
+                  <i class="fab fa-twitter text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transform hover:scale-110 transition-all duration-300"
+                >
+                  <i class="fab fa-facebook-f text-sm"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transform hover:scale-110 transition-all duration-300"
+                >
+                  <i class="fab fa-instagram text-sm"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-pink-300 pt-8 text-center">
+          <p class="text-pink-700">
+            &copy; 2025 Kyara Beverages. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
