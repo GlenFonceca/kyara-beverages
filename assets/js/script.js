@@ -94,7 +94,7 @@ const revealSections = () => {
 window.addEventListener("scroll", revealSections);
 revealSections(); // Initial call
 
-// Add smooth scrolling behavior
+// smooth scrolling behavior
 const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 smoothScrollLinks.forEach((link) => {
   link.addEventListener("click", function (e) {
@@ -114,7 +114,7 @@ smoothScrollLinks.forEach((link) => {
   });
 });
 
-// Add fade-in animation for form elements
+// fade-in animation for form elements
 const form = document.querySelector("form");
 if (form) {
   const formElements = form.querySelectorAll("input, textarea, button");

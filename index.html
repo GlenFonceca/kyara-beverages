@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyara Beverages</title>
 
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -13,55 +13,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
   </head>
   <body class="bg-gradient-to-br from-pink-50 to-pink-100">
     <!-- Navigation -->
-     <nav class="fixed w-full top-0 z-50 navbar-blur border-b border-pink-200 shadow-md bg-white/30 backdrop-blur-md">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <div class="flex items-center space-x-3">
-        <span class="text-2xl font-bold text-pink-900">Kyara Beverages</span>
-      </div>
-
-      <!-- Desktop Menu -->
-      <div class="hidden md:flex space-x-8">
-        <a href="#hero" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Home</a>
-        <a href="#about" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">About</a>
-        <a href="#products" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Products</a>
-        <a href="#contact" class="text-pink-800 hover:text-pink-600 transition-colors duration-300 font-medium">Contact</a>
-      </div>
-
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="menu-btn" class="text-pink-800 hover:text-pink-600 transition-colors duration-300">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile Dropdown Menu -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-white/40 backdrop-blur-md border-t border-pink-200">
-    <a href="#hero" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Home</a>
-    <a href="#about" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">About</a>
-    <a href="#products" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Products</a>
-    <a href="#contact" class="block py-2 text-pink-800 hover:text-pink-600 font-medium">Contact</a>
-  </div>
-</nav>
-    <!-- <nav class="fixed w-full top-0 z-50 navbar-blur border-b border-pink-200 shadow-md">
+    <nav
+      class="fixed w-full top-0 z-50 navbar-blur border-b border-pink-200 shadow-md bg-white/30 backdrop-blur-md"
+    >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
           <div class="flex items-center space-x-3">
             <span class="text-2xl font-bold text-pink-900"
               >Kyara Beverages</span
             >
           </div>
 
+          <!-- Desktop Menu -->
           <div class="hidden md:flex space-x-8">
             <a
               href="#hero"
@@ -85,8 +52,10 @@
             >
           </div>
 
+          <!-- Mobile Menu Button -->
           <div class="md:hidden">
             <button
+              id="menu-btn"
               class="text-pink-800 hover:text-pink-600 transition-colors duration-300"
             >
               <svg
@@ -106,7 +75,34 @@
           </div>
         </div>
       </div>
-    </nav> -->
+
+      <!-- Mobile Dropdown Menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden hidden px-4 pb-4 bg-white/40 backdrop-blur-md border-t border-pink-200"
+      >
+        <a
+          href="#hero"
+          class="block py-2 text-pink-800 hover:text-pink-600 font-medium"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block py-2 text-pink-800 hover:text-pink-600 font-medium"
+          >About</a
+        >
+        <a
+          href="#products"
+          class="block py-2 text-pink-800 hover:text-pink-600 font-medium"
+          >Products</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-pink-800 hover:text-pink-600 font-medium"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section
@@ -135,22 +131,25 @@
               class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in-up"
               style="animation-delay: 0.8s"
             >
-              <button
-                class="px-8 py-4 bg-pink-600 text-white rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 pulse-glow"
-              >
-                Discover Our Drinks
-              </button>
-              <button
-                class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-full font-semibold text-lg hover:bg-pink-600 hover:text-white transform hover:scale-105 transition-all duration-300"
-              >
-                Learn More
-              </button>
+              <a href="#products">
+                <button
+                  class="px-8 py-4 bg-pink-600 text-white rounded-full font-semibold text-lg hover:bg-pink-700 transform hover:scale-105 transition-all duration-300 pulse-glow"
+                >
+                  Discover Our Drinks
+                </button>
+              </a>
+              <a href="#about">
+                <button
+                  class="px-8 py-4 border-2 border-pink-600 text-pink-600 rounded-full font-semibold text-lg hover:bg-pink-600 hover:text-white transform hover:scale-105 transition-all duration-300"
+                >
+                  Learn More
+                </button>
+              </a>
             </div>
           </div>
 
-          <div class="hidden  justify-center slide-in-right relative lg:flex">
+          <div class="hidden justify-center slide-in-right relative lg:flex">
             <div class="relative">
-        
               <div
                 class="w-80 h-80 bg-gradient-to-br from-pink-300 to-pink-500 float-animation opacity-20 absolute -top-10 -left-10 morphing-blob"
               ></div>
@@ -172,7 +171,7 @@
                 />
               </div>
 
-              <!-- Additional floating elements -->
+              <!--floating elements -->
               <div
                 class="absolute -top-5 -right-5 w-16 h-16 bg-pink-300 rounded-full opacity-40 float-animation"
                 style="animation-delay: -1s"
@@ -416,21 +415,21 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="#products"
                   class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
                   >Nutri Brown Delight</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#products"
                   class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
                   >Ragi Velvet</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#products"
                   class="text-pink-700 hover:text-pink-600 transition-colors duration-300"
                   >Millet Mellow</a
                 >
@@ -442,19 +441,7 @@
             <h4 class="font-bold text-pink-900 mb-4">Contact Info</h4>
             <div class="space-y-2 text-pink-700">
               <p class="flex items-center space-x-2">
-                <svg
-                  class="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  ></path>
-                </svg>
+                <i class="fas fa-envelope text-sm"></i>
                 <span class="text-sm">careers@kyarabeverages.in</span>
               </p>
               <div class="flex space-x-4 mt-4">
